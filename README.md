@@ -1,7 +1,7 @@
 # 🔊 Audio: Noise Estimation
 
 <div id="header" align="center">
-  <img src="https://i.gifer.com/Jfyt.gif" width="400"/>
+  <img src="https://tenor.com/ru/view/gina-oblivious-brooklyn99-gif-7948650.gif" width="400"/>
 </div>
 
 ---
