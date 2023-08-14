@@ -1,7 +1,7 @@
 # 🔊 Audio: Noise Estimation
 
 <div id="header" align="center">
-  <img src="https://tenor.com/ru/view/gina-oblivious-brooklyn99-gif-7948650.gif" width="400"/>
+  <img src="https://i.gifer.com/Jfyt.gif" width="400"/>
 </div>
 
 ---
@@ -35,16 +35,23 @@ The 1st attempt to preprocess and work with the audio files is displayed in this
 [Audio-Noise-Classification](https://github.com/Daryadare/Audio-Noise-Classification/blob/main/ANC-proj.ipynb) notebook contains all the work done through this project, but also has:
 * Custom Dataset class to get clean or noisy audio sample from datasets;
 * Data Loader;
-* train functions got GPU and CPU;
+* train functions for GPU and CPU;
 * training on the fully-connected Neural Network the result of which were not quite good;
 * code for future training on the more powerful models.
 
 ---
 
-[Noise Estimation](https://github.com/Daryadare/Audio-Noise-Classification/blob/main/Noise-Estimation.ipynb) is the clean version of the previous notebook that also includes actual training (currently) on 4 models:
+[Noise Estimation](https://github.com/Daryadare/Audio-Noise-Classification/blob/main/Noise-Estimation.ipynb) is the clean version of the previous notebook that also includes actual training as for now on 3 models:
 1. MHAttKWS
 2. BCResNet
 3. VGG
-4. ResNet
 
-As for now the results aren't great but learning isn't over yet!
+---
+
+## 👩‍🔬 Current results
+1. MHAttKWS: this model isn't powerful enough for this task that's why it just keeps guessing and accuracy is only about 50%
+2. BCResNet (scale=1): trained up to 100% on train and validation data, and between 90-100% on different test data
+3. BCResNet (scale=8, 16): work in progress...
+4. VGG: trained up to 100% on train and validation data, and between 82-100% on different test data
+
+And as for now the results are actually quite great but learning isn't over yet!
